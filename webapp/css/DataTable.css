@@ -1,0 +1,79 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topline {
+    background-color: #111;
+    width:100%;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    position:fixed;
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+
+
+}
+
+
+.table {
+    width: 80%;
+    height: fit-content;
+    margin: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.table .setup_bar {
+    padding: 10px;
+
+}
+
+
+.setup_bar > div{
+    display:inline-block;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px;
+    vertical-align: middle;
+}
+#tableKey{
+    width: 200px;
+    height: 35px;
+    vertical-align: middle;
+
+}
+
+#tableKey option{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.button1 {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: grey;
+    border-style: outset;
+    border-color: darkgrey;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+.data_table{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+
+

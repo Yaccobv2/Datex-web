@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- HTML file head: web page metadata -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+        <!-- Chart.js library -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/charts.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/Charts.css"/>
+    </head>
+
+<body>
+<div class="topline">Charts</div>
+
+
+<div class="charts">
+
+    <div class="setup_bar">
+        <div><span>Sample time: <span id="sampletime"></span> ms</span></div>
+        <div><span>Sample quantity: <span id="sampleQuantity"></span></span></div>
+    </div>
+
+    <div class="ChartBox">
+        <h1>Temperature Chart</h1>
+        <canvas id="tChart"></canvas>
+    </div>
+    <div class="ChartBox">
+        <h1>Pressure Chart</h1>
+        <canvas id="pChart"></canvas>
+    </div>
+    <div class="ChartBox">
+        <h1>Humidity Chart</h1>
+        <canvas id="hChart"></canvas>
+    </div>
+    <div class="ChartBox">
+        <h1>Roll Chart</h1>
+        <canvas id="rChart"></canvas>
+    </div>
+    <div class="ChartBox">
+        <h1>Pitch Chart</h1>
+        <canvas id="piChart"></canvas>
+    </div>
+    <div class="ChartBox">
+        <h1>Yaw Chart</h1>
+        <canvas id="yChart"></canvas>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

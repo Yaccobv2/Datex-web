@@ -1,0 +1,98 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topline {
+    background-color: #111;
+    width:100%;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    position:fixed;
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+}
+
+
+
+
+.topline .button {
+    display:inline-block;
+    background-color:grey;
+    border-style: outset;
+    border-color: darkgrey;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+
+}
+
+.button:focus {
+	outline:0;
+}
+
+.data {
+	display: none;
+	width: fit-content; 
+	height: fit-content;
+	margin-top: 40px;
+    padding-top: 40px;
+	
+}
+
+
+.data .configDiv {
+	padding-left: 100px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	margin-right: 90px;
+	
+}
+
+
+.data .configDiv .text_config {
+	vertical-align:center;
+	display:inline-block;
+	font-weight: bold;
+	font-size: 25px;
+	padding-right: 20px;
+	
+	
+}
+
+.data .configDiv .data_config {
+	vertical-align:center;
+	display:inline-block;
+
+
+}
+
+.configDiv > h4{
+    display: inline-block;
+}
+
+.configDiv > input{
+    display: inline-block;
+}
+
+
+
+.configDiv .button2{
+    background-color: grey;
+    border-style: outset;
+    border-color: darkgrey;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}

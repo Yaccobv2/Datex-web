@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- HTML file head: web page metadata -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+		
+		
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		
+		<script type="text/javascript" src="js/config.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/config.css"/>
+	</head>
+
+	<!-- HTML file body: web page content -->
+	<body>
+	
+		<div class="topline">Config
+
+			<button class="button" id="savedSettings" onclick="javascript:chooseCard(document.getElementById('savedSettings'),
+																document.getElementById('newSettings'),
+																document.getElementById('savedData'),
+																document.getElementById('newData'))">
+																Saved settings</button>
+			
+			<button class="button" id="newSettings"  onclick="javascript:chooseCard(document.getElementById('newSettings'),
+															  document.getElementById('savedSettings'),
+															  document.getElementById('newData'),
+															  document.getElementById('savedData'))">
+															  Set new settings</button>
+
+		</div>
+
+	
+	
+	
+	
+		<div id="container">
+			
+			<div class="data" id="savedData">
+				<div class="configDiv">
+					<div class="text_config">IP Adress:</div>
+					<div class="data_config" id="IP_Adress_data">Error: can`t load data</div>
+				</div>
+				<div class="configDiv">
+					<div class="text_config">Port:</div>
+					<div class="data_config" id="Port_data">Error: can`t load data</div>
+				</div>
+				<div class="configDiv">
+					<div class="text_config">Sample Time[s]:</div>
+					<div class="data_config" id="SampleTime_data">Error: can`t load data</div>
+				</div>
+				<div class="configDiv">
+					<div class="text_config">Sample Quantity:</div>
+					<div class="data_config" id="SampleQuantity_data">Error: can`t load data</div>
+				</div>
+			</div>
+			
+			
+			<div class="data" id="newData">
+				<div class="configDiv" >
+					<h4> IP Adress: </h4>
+					<input type="text" id="IP_Adress">
+				</div>
+				<div class="configDiv">
+					<h4> Port: </h4>
+					<input type="text" id="Port">
+				</div>
+				<div class="configDiv">
+					<h4> Sample Time[s]: </h4>
+					<input type="text" id="SampleTime">
+				</div>
+				<div class="configDiv">
+					<h4> Sample Quantity: </h4>
+					<input type="text" id="SampleQuantity">
+				</div>
+				<div class="configDiv" id="btnUpdateConfig">
+						<button type="button" class="button2" onclick="updateConfig()">UPDATE</button>
+						<button type="button" class="button2" onclick="updateConfigToDefault()">RESET TO DEFAULT</button>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+
+</html>

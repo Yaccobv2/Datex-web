@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- HTML file head: web page metadata -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+		
+		
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/DataTable.css"/>
+		<script type="text/javascript" src="js/dataTable.js"></script>
+	</head>
+
+	<!-- HTML file body: web page content -->
+	<body>
+			<div class="topline">Data Table</div>
+
+			
+			<div class="table">
+				<div class="setup_bar">
+
+					<div>
+						<span>Sample time: <span id="sampletime"></span> ms</span>
+					</div>
+
+					<div id="setup">
+					<select  id="tableKey">
+						<option value="all">All</option>
+						<option value="tph">TPH measurement</option>
+						<option value="rpy">RPY measurement</option>
+						<option value="joy">Joystick Position</option>
+					</select>
+					</div>
+
+
+					<div><button type="button" class="button1" id="btnUPDATE" onclick="updateTableConfig()">
+						UPDATE</button></div>
+				</div>
+				
+				<div class="data_table" id="TableDiv">
+				</div>
+			</div>
+
+	</body>
+
+</html>
